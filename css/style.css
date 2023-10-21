@@ -1,0 +1,223 @@
+:root{
+    --dark:#19283f;
+    --green-color:#33d1cc;
+    --yellow-color:#ffc400;
+    --red-color:#ff3150;
+    --section-color:#eff7fa;
+}
+body{
+    font-family: "Roboto" , sans-serif;
+    /* height: 10000px; */
+}
+/* start nav&landing page */
+.landingpage{
+    height: 100vh;
+    background-color: var(--dark);
+}
+.navbar{
+    background-color: var(--dark);
+}
+nav .nav-item .nav-link{
+    color: white;
+}
+nav .nav-item .nav-link:hover , nav .nav-item .nav-link:focus , nav  .nav-item .nav-link.active {
+    color:  var(--green-color);
+}
+nav .search{
+    border-left: solid 1px var(--green-color);
+    padding-inline: 20px;
+    color: var(--green-color);
+}
+.navbar-toggler{
+    color: white;
+    border-color: white;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+nav .btn , nav .btn:hover{
+    color: var(--yellow-color);
+    background-color: var(--red-color);
+    border: none;
+}
+.landPage{
+    color: white;
+    height: calc(100% - 72px);
+}
+.landPage a , .landPage a :hover{
+    color: var(--yellow-color);
+    background-color: var(--red-color);
+    border: none;
+}
+/* start feature page */
+.feature::after{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 1px;
+    background-color: var(--green-color);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.features .icon-holder {
+ height: 200px;
+    
+}
+.features .icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .icon-holder .number{
+   font-size: 12rem;
+   color: var(--section-color);
+}
+.features .icon-holder .icon{
+    font-size: 3rem;
+    color: var(--green-color);
+}
+.feat h3{
+    color: var(--yellow-color);
+}
+/* end feature page */
+/* start work page */
+.ourwork{
+    background-color: var(--section-color);
+  
+}
+.ourwork ul a{
+    text-decoration: none;
+}
+.ourwork ul a{
+    padding: .5rem 1rem ;
+    color: black;
+    
+}
+.ourwork ul .active{
+    color: var(--yellow-color);
+    background-color: var(--red-color);
+   
+}
+.ourwork ul a:not(.active):hover{
+color: var(--red-color);
+}
+.ourwork .box{
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+    padding: 5px;
+  
+}
+.ourwork .box::after{
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    position: absolute;
+    content: attr(data);
+    top: 5px;
+    left: -100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all .25s linear;
+    background-color: rgba(0, 0, 0, .3);
+
+
+}
+.ourwork .box:hover::after{
+    left: 5px;
+}
+/* end work page */
+
+/* start stuf page */
+
+.stuf .description{
+    max-width: 400px;
+}
+
+/*end stuf page */
+/* start team page */
+.team{
+    background-color: var(--section-color);
+   
+}
+.team h2{
+    color: var(--yellow-color);
+}
+.team .box .card-body h3{
+    background-color: var(--green-color);
+    color: white;
+    padding-block: 5px;
+
+}
+.team .box .card-body p {
+    padding: 5px;
+}
+/* end team page */
+
+.project{
+    background-color: var(--dark);
+   
+}
+.project h2{
+    color: white;
+}
+.project a , .project a:hover{
+    background-color: var(--red-color);
+    border: none;
+}
+/* start blog page */
+.blog a , .blog a:hover{
+    background-color: var(--red-color);
+    border: none;}
+/* end blog page */
+/* start subscribe page */
+.subscribe{
+    background-color: var(--yellow-color);
+}
+.subscribe form input[type="text"]{
+    border: none;
+    border-bottom: solid 1px white;
+}
+.subscribe form input[type="submit"]{
+    background-color: var(--dark);
+    border: none;
+    padding: 2px 10px;
+    color: var(--yellow-color);
+}
+
+/* end subscribe page */
+/* start footer page */
+.footer{
+    background-color: var(--dark);
+}
+.footer .btcon{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.footer .logo .one{
+    color: var(--green-color);
+}
+
+.footer .logo .two{
+    color: var(--yellow-color);
+}
+.footer svg{
+    width: 20px;
+    height: 20px;
+}
+ .footer .facebook {
+    color:#1877f2 ;
+    
+}
+
+.footer .twitter {
+    color:#1da1f2 ;
+}
+.footer .linkedin {
+   color:#0077b5 ;
+}
+.footer .youtube {
+ color:#770000 ;
+} 
